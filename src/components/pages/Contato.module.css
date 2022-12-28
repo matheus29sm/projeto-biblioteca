@@ -1,0 +1,17 @@
+.contato{
+    text-align: center;
+    cursor: default;
+}
+
+.contato p{
+    font-style:oblique;
+    font-weight: bold;
+}
+
+.contato span{
+    font-weight: lighter;
+}
+
+.dd{
+    color: rgb(16, 8, 241);
+}

@@ -1,15 +1,19 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
-import logo from './img/logo.png'
+import Home from './components/pages/Home';
+import Contato from './components/pages/Contato';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <h1>
-        Biblioteca
-      </h1>
-      <img src={logo} alt="B"/>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path ='/' element={<Home/>}/>
+          <Route path='/contato' element={<Contato/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

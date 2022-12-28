@@ -19,4 +19,14 @@
 
 .navbar li{
     margin-right: 1em;
+    font-size: 20px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.navbar li a:hover{
+    color: #3d1dde;
 }
